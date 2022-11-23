@@ -1,0 +1,58 @@
+html, body
+{
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+body {
+    background-color: #C4D300;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 5vw;
+    overflow: hidden;
+    position: relative;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: 20vw;
+    }
+}
+
+img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.marquee-section {
+    position: relative;
+}
+
+.marquee-div {
+    position: absolute;
+    animation: move-right-to-left linear 15s infinite;
+}
+
+.marquee {
+    white-space: nowrap;
+}
+
+.marquee span {
+    display: block;
+}
+
+@keyframes move-right-to-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
