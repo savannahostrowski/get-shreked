@@ -1,0 +1,8 @@
+[project]
+name = "get-shreked"
+version = "0.1.0"
+description = "You've been Shreked."
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.136.1",
+]
